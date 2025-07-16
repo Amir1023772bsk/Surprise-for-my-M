@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>پیام مخفی برای مریم 🌹</title>
+<style>
+  body {
+    background: linear-gradient(135deg, #1a1a1a 0%, #3b0d0d 100%);
+    color: #f0f0f0;
+    font-family: 'Tahoma', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #box {
+    background: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }
+  input {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #4a8cff;
+    color: white;
+    cursor: pointer;
+  }
+  #message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff;
+    display: none;
+  }
+</style>
+</head>
+<body>
+<div id="box">
+  <h2>برای دیدن پیام مخفی، رمز رو وارد کن:</h2>
+  <input type="password" id="pwd" placeholder="رمز رو وارد کن">
+  <br>
+  <button onclick="check()">🔐 ارسال</button>
+  <div id="message">مریم قشنگ من تو قشنگترین فرشته دنیایی🤍💚</div>
+</div>
+
+<script>
+function check() {
+  const pwd = document.getElementById('pwd').value;
+  if (pwd === '162983') {
+    document.getElementById('message').style.display = 'block';
+  } else {
+    alert('رمز اشتباهه! 😕');
+  }
+}
+</script>
+</body>
+</html>
